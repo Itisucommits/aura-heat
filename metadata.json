@@ -1,0 +1,10 @@
+{
+  "name": "AURA-Heat Decision Support System",
+  "description": "Adaptive Urban Risk and Automated Heatwave Advisory System: biometeorological indices (UTCI, WBGT), ward vulnerability modeling, epidemiological risk forecasting, and automated municipal triggers.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

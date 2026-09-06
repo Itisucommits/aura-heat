@@ -1,0 +1,8 @@
+-- AURA-Heat Database Initialization Script
+-- Enable PostGIS and UUID extensions
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE EXTENSION IF NOT EXISTS postgis_raster;
+
+-- Verify PostGIS version
+SELECT PostGIS_Full_Version();
