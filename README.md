@@ -76,38 +76,6 @@ Traditional heatwave early-warning systems typically rely on single ambient dry-
 
 ---
 
-## 📁 Project Structure
-
-```
-aura-heat/
-├── backend/                  # FastAPI service, database models & Celery tasks
-│   ├── main.py               # REST API endpoints & route handlers
-│   ├── thermal_engine.py     # Standalone UTCI, WBGT (ISO 7243) & Heat Index algorithms
-│   ├── tasks.py              # Celery background workers (ingestion & alerts)
-│   ├── models.py             # SQLAlchemy 2.0 & GeoAlchemy2 spatial tables
-│   ├── schemas.py            # Pydantic v2 request/response schemas
-│   └── database.py           # Async database connection session
-├── docker/                   # Docker Compose & container configurations
-│   ├── docker-compose.yml    # Orchestration: PostGIS, Redis, FastAPI, Celery, Web
-│   ├── Dockerfile.backend    # FastAPI image definition
-│   ├── Dockerfile.celery     # Worker image definition
-│   └── Dockerfile.frontend   # Nginx static production build
-├── gis_data/                 # Municipal spatial boundaries & seed data
-│   ├── ahmedabad_wards.geojson # Ward polygon vector data
-│   └── seed_gis.py           # PostGIS seeding utility
-├── ml_pipeline/              # Machine learning models
-│   ├── vulnerability_model.py # Microclimate downscaler & Ward Vulnerability Index (WVI)
-│   └── train_dlnm.py         # Distributed Lag Non-linear Model (DLNM) + XGBoost
-├── src/                      # React 19 + TypeScript frontend application
-│   ├── components/           # UI modules (GIS Map, Hospital Portal, Calculator, etc.)
-│   ├── data/                 # Ward spatial datasets & client-side simulation fallbacks
-│   ├── utils/                # In-browser thermal & biometeorological calculation engine
-│   └── App.tsx               # Main dashboard controller
-└── start.sh                  # One-command auto-detect runner
-```
-
----
-
 ## 🔌 Core API Endpoints
 
 | Method | Endpoint | Purpose |
@@ -120,9 +88,3 @@ aura-heat/
 | `GET` | `/api/v1/analytics/summary` | City-wide KPI summary (ward alert counts, max temperature, tankers mobilized). |
 
 ---
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-
