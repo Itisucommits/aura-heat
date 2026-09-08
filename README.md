@@ -20,6 +20,10 @@ A specialized municipal climate resilience platform that translates coarse numer
 
 ---
 
+## Platform Link: https://aura-heat-decision-support-system.vercel.app/
+
+---
+
 ## 📖 About the Project
 
 Traditional heatwave early-warning systems typically rely on single ambient dry-bulb temperature ($T_{air}$) forecasts from coarse synoptic models. In reality, human heat stress depends heavily on humidity, solar radiation flux, and wind stagnation, while urban morphology creates intense **Urban Heat Islands (UHI)** in dense, unshaded wards. Furthermore, public health impacts—such as heat-stroke admissions and cardiovascular fatalities—peak across a **2 to 5 day lag** following exposure.
